@@ -18,3 +18,12 @@ function repeatStr(str, n) {
 // console.log(repeatStr("wild", 2), "wildwild")
 
 
+
+//Optimised
+
+//string.repeat
+
+function repeatString(str, n){
+    return str.repeat(n)
+}
+
