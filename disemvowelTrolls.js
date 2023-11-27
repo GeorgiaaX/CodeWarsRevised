@@ -4,11 +4,17 @@
 //return a string with the vowels removed
 
 function noVowels(str) {
-    //split.filter.join
-    return str.replace(/[aeiouAEIOU]/gi, '')
+    //replace
+    return str.replace(/[aeiou]/gi, '')
 }
 
 console.log(noVowels("Hello World!"), "Hll Wrld!" )
 console.log(noVowels("Rainy day weather"), "Rny dy Wthr" )
 console.log(noVowels("Can I order a pizza please?"), "Cn rdr pzz pls?" )
 
+
+
+///[aeiou]/gi: This is a regular expression pattern that defines the characters to be searched for and replaced. Let's break down the components of this pattern:
+//[aeiouAEIOU]: This part of the pattern is a character class that matches any single character that is a vowel. The characters within square brackets represent the set of characters to match. In this case, it matches both lowercase and uppercase vowels (a, e, i, o, u, A, E, I, O, U).
+//g: This flag indicates that the replacement should be done globally, meaning that it will replace all occurrences of the matched pattern in the entire string, not just the first one.
+//i: This flag makes the matching case-insensitive, so it will match both lowercase and uppercase vowels.
